@@ -1,0 +1,33 @@
+@contosopizza_HostAddress = http://localhost:5011
+
+GET {{contosopizza_HostAddress}}/pizza/
+Accept: application/json
+
+###
+POST {{contosopizza_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Meatlovers",
+    "isGlutenFree": false
+}
+
+###
+PUT {{contosopizza_HostAddress}}/pizza/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+DELETE {{contosopizza_HostAddress}}/pizza/3
+
+###
+###
+
+###
+
+###
